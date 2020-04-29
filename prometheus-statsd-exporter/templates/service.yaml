@@ -8,12 +8,12 @@ spec:
   type: {{ .Values.service.type }}
   ports:
   - name: web
-    port: {{ .Values.webPort }}
+    port: 9102
     protocol: TCP
-    targetPort: {{ .Values.webPort }}
+    targetPort: 9102
   - name: statsd-tcp
-    port: {{ .Values.tcpPort }}
+    port: 9125
     protocol: TCP
-    targetPort: {{ .Values.tcpPort }}
+    targetPort: 9125
   selector:
     {{- include "prometheus-statsd-exporter.selectorLabels" . | nindent 4 }}
