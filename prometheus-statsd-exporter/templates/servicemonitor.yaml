@@ -10,4 +10,4 @@ spec:
     port: web
   selector:
     matchLabels:
-      app: {{ include "prometheus-statsd-exporter.fullname" . }}
+      app.kubernetes.io/name: {{ include "prometheus-statsd-exporter.fullname" . }}
