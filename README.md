@@ -3,5 +3,5 @@
 ## Install Repo
 
 ```
-$ helm repo add razvvan https://razvvan.github.io/charts/charts/
+$ helm repo add manotaur-charts https://razvvan.github.io/charts/charts/
 ```
