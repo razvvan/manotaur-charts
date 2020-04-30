@@ -22,12 +22,6 @@ jobs:
       with:
         fetch-depth: '2'
 
-    - name: Git check
-      run: |
-        git fetch --all
-        git checkout gh-pages
-        git checkout master
-
     - name: Configure Git
       run: |
         git config user.name "$GITHUB_ACTOR"
