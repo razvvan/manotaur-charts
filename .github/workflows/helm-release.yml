@@ -27,21 +27,13 @@ jobs:
         git config user.name "$GITHUB_ACTOR"
         git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
+    - name: Run me
+      run: |
+        git rev-list origin/master
+
     - name: Helm Chart Releaser
       uses: razvvan/chart-releaser-action@master
       env:
         CR_TOKEN: "${{ secrets.CR_TOKEN }}"
 
-    - name: Run me
-      run: |
-        lookup_latest_tag() {
-          git fetch --tags > /dev/null 2>&1
-
-          if ! git describe --tags --abbrev=0 2> /dev/null; then
-              git rev-list --max-parents=0 --first-parent HEAD
-          fi
-        }
-
-        latest_tag=$(lookup_latest_tag)
-        echo $latest_tag
 
