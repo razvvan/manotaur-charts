@@ -29,6 +29,7 @@ jobs:
 
     - name: Run me
       run: |
+        git pull --depth 2
         git rev-list origin/master
 
     - name: Helm Chart Releaser
