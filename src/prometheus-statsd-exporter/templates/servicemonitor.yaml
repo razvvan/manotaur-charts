@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "prometheus-statsd-exporter.fullname" . }}
+  labels:
+    release: prometheus
+    {{- include "prometheus-statsd-exporter.labels" . | nindent 4 }}
+spec:
+  endpoints:
+  - path: /metrics
+    port: web
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "prometheus-statsd-exporter.fullname" . }}
