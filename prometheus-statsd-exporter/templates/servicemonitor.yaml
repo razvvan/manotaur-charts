@@ -3,6 +3,7 @@ kind: ServiceMonitor
 metadata:
   name: {{ include "prometheus-statsd-exporter.fullname" . }}
   labels:
+    release: prometheus
     {{- include "prometheus-statsd-exporter.labels" . | nindent 4 }}
 spec:
   endpoints:
