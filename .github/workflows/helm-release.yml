@@ -33,7 +33,7 @@ jobs:
         git rev-list origin/master
 
     - name: Helm Chart Releaser
-      uses: razvvan/chart-releaser-action@master
+      uses: helm/chart-releaser-action@v1.0.0-rc.2
       env:
         CR_TOKEN: "${{ secrets.CR_TOKEN }}"
 
