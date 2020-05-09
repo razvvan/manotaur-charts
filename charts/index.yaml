@@ -3,12 +3,12 @@ entries:
   prometheus-statsd-exporter:
   - apiVersion: v2
     appVersion: v0.15.0
-    created: "2020-05-04T00:30:21.628974587Z"
+    created: "2020-05-09T23:42:14.141380994Z"
     description: A Helm chart for Kubernetes
-    digest: 797ddd962ca3e8059dbb33bf4333fcf95de9fe94502cc69a97ea99c3d164553b
+    digest: e9e6cd71b570df5105d244cca82b38e897671c75c2e2749ed9ea8db8a3bf546e
     name: prometheus-statsd-exporter
     type: application
     urls:
     - https://razvvan.github.io/charts/charts/prometheus-statsd-exporter-0.1.31.tgz
     version: 0.1.31
-generated: "2020-05-04T00:30:21.628257384Z"
+generated: "2020-05-09T23:42:14.140843592Z"
