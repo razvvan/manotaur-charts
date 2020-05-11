@@ -3,20 +3,31 @@ entries:
   gce-pvcs:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T06:37:19.5215081Z"
+    created: "2020-05-11T06:43:37.68540874Z"
     description: GCE PVCs
-    digest: 5b2585739274efdc175f8ac245761574769850cbd19a99a0f7ea3a8af1b9b52b
+    digest: e254eb1a22c113ce47fc417f38e55509ae648de1bf5c1797f2d5c92a0a726f23
     name: gce-pvcs
     type: application
     urls:
     - https://razvvan.github.io/charts/charts/gce-pvcs-0.0.1.tgz
     version: 0.0.1
+  letsencrypt-issuer:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2020-05-11T06:43:37.685622742Z"
+    description: Letsencrypt
+    digest: 48297633167dd5507bb7861a688010a0fda08457a9d2ab68be378538ebea7364
+    name: letsencrypt-issuer
+    type: application
+    urls:
+    - https://razvvan.github.io/charts/charts/letsencrypt-issuer-0.0.1.tgz
+    version: 0.0.1
   namespaces:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T06:37:19.521695297Z"
+    created: "2020-05-11T06:43:37.685796944Z"
     description: Namespaces
-    digest: 6910c92594639f94988dda6ab1b963cad956189127314013f2ec38f6c59d5b43
+    digest: 45c5e81201fe56b47ca074707e0539b435acbad11061eb0226310b8ada81e659
     name: namespaces
     type: application
     urls:
@@ -25,12 +36,12 @@ entries:
   prometheus-statsd-exporter:
   - apiVersion: v2
     appVersion: v0.15.0
-    created: "2020-05-11T06:37:19.522097789Z"
+    created: "2020-05-11T06:43:37.686188047Z"
     description: A Helm chart for Kubernetes
-    digest: 10a252c91e9d646c7cc141640518cfa4ecb2d6b34dd49d541c5dfe8eed9383ba
+    digest: 82974f72cd919d43d0543ee8e70b4a7f82c90a278b2f275994f7131e02572d67
     name: prometheus-statsd-exporter
     type: application
     urls:
     - https://razvvan.github.io/charts/charts/prometheus-statsd-exporter-0.1.31.tgz
     version: 0.1.31
-generated: "2020-05-11T06:37:19.520883611Z"
+generated: "2020-05-11T06:43:37.684987336Z"
