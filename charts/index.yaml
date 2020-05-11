@@ -3,9 +3,9 @@ entries:
   gce-pvcs:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T06:53:43.39798235Z"
+    created: "2020-05-11T06:59:17.437590296Z"
     description: GCE PVCs
-    digest: bb4edd2a2f5801ac281208316cd04056fbbef7379b4d9bc12f65845692fffa34
+    digest: 8552bd70a173f34dde81faaf2db9ee53a1e2c860a9b7c0404d5fa558992d3e50
     name: gce-pvcs
     type: application
     urls:
@@ -14,20 +14,20 @@ entries:
   letsencrypt-issuer:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T06:53:43.398229452Z"
+    created: "2020-05-11T06:59:17.437786394Z"
     description: Letsencrypt
-    digest: 8d85d54120e0b0befeac9faac061b5bf1bac112b9cf3b8c292e36698a704b8d3
+    digest: c6925a42aa91f73358c3d6ca00f72023d230be3a854100692a3dd1787ec48df3
     name: letsencrypt-issuer
     type: application
     urls:
-    - https://razvvan.github.io/manotaur-charts/charts/letsencrypt-issuer-0.0.1.tgz
-    version: 0.0.1
+    - https://razvvan.github.io/manotaur-charts/charts/letsencrypt-issuer-0.0.2.tgz
+    version: 0.0.2
   namespaces:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T06:53:43.398406153Z"
+    created: "2020-05-11T06:59:17.437941992Z"
     description: Namespaces
-    digest: 18de45b1e497f7632c09c445da3add9fd53eb986c962d1ca49236a7ebf92728b
+    digest: 78f40c54b502cb1b1fc2ca597a9fd5f9b1edfeb8c4523921d0ac04321444ee78
     name: namespaces
     type: application
     urls:
@@ -36,12 +36,12 @@ entries:
   prometheus-statsd-exporter:
   - apiVersion: v2
     appVersion: v0.15.0
-    created: "2020-05-11T06:53:43.398808256Z"
+    created: "2020-05-11T06:59:17.438313289Z"
     description: A Helm chart for Kubernetes
-    digest: a36201e21325ae84c64d19f043aa28e09868605c600fa2df976139619a0692f1
+    digest: 87f12d1842875f334d4908b6a33d5309996216abd5b9bf7ce46d1899a967246b
     name: prometheus-statsd-exporter
     type: application
     urls:
     - https://razvvan.github.io/manotaur-charts/charts/prometheus-statsd-exporter-0.1.31.tgz
     version: 0.1.31
-generated: "2020-05-11T06:53:43.397044644Z"
+generated: "2020-05-11T06:59:17.413196043Z"
