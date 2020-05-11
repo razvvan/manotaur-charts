@@ -1,4 +1,5 @@
-{{ $root = .Values }}
+{{- $root := . -}}
+
 {{ range .Values.issuers }}
 ---
 apiVersion: cert-manager.io/v1alpha2
@@ -22,5 +23,5 @@ spec:
     solvers:
     - http01:
         ingress:
-          class:  {{ $root.nginxClass }}
+          class:  {{ $root.Values.nginxClass }}
 {{- end }}
