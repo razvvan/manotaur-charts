@@ -8,7 +8,7 @@ mkdir -p charts
 
 sha_root=$(git log --pretty=oneline . | head -n 1 | awk '{print $1}')
 
-for chart in "prometheus-statsd-exporter"; do
+for chart in $(ls src); do
   echo "Checking $chart"
 
   sha_chart=$(git log --pretty=oneline src/prometheus-statsd-exporter/ | head -n 1 | awk '{print $1}')

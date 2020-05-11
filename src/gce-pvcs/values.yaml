@@ -1,0 +1,5 @@
+disks:
+  - pdName: grafana-disk
+    prefix: grafana
+    sizeInG: "8"
+    storageClassName: standard

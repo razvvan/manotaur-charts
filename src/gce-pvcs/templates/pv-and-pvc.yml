@@ -1,0 +1,29 @@
+{{- range .Values.disks }}
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .prefix }}-pv
+spec:
+  storageClassName: {{ .storageClassName }}
+  capacity:
+    storage: {{ .sizeInG }}G
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: {{ .pdName }}
+    fsType: ext4
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .prefix }}-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .sizeInG }}Gi
+  storageClassName: {{ .storageClassName }}
+  volumeName: "{{ .prefix }}-pv"
+{{- end }}
