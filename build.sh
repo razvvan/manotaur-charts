@@ -25,7 +25,7 @@ done
 
 
 if $changes ; then
-  helm repo index --url https://razvvan.github.io/charts/ .
+  helm repo index --url https://razvvan.github.io/manotaur-charts/ .
 
   git fetch --all
   git checkout gh-pages
