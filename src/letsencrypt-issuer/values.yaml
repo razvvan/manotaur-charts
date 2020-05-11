@@ -1,0 +1,4 @@
+nginxClass: nginx
+issuers:
+  - email: foo@foo.com
+    namespace: default
