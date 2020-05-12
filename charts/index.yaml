@@ -3,9 +3,9 @@ entries:
   gce-pvcs:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T07:03:46.9380934Z"
+    created: "2020-05-12T02:34:03.20167563Z"
     description: GCE PVCs
-    digest: c0f23688d6920c3aa1610ed669471ff64e638fbdae16bfa1bff1ac4a4e437700
+    digest: 02964ed0b07df7589e4d6b30a48a25f5607f738a96f4230a28598782226eee73
     name: gce-pvcs
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   letsencrypt-issuer:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T07:03:46.938311502Z"
+    created: "2020-05-12T02:34:03.201896528Z"
     description: Letsencrypt
-    digest: 24bd0929df3088385bb962e27b4dc397d39eecac333da6d3728c1bd1c63c2e8c
+    digest: 7396ddcff703c4b916398280e11c4ef4abf3277a7288d5865428e79bd4aefaa5
     name: letsencrypt-issuer
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-05-11T07:03:46.938484004Z"
+    created: "2020-05-12T02:34:03.202087926Z"
     description: Namespaces
-    digest: 299f94631767768819a22663146f09c4f73c7c40b1784276ffaaade93565efc7
+    digest: b40546350aeb30ce1e701f7b0258dac3497928ed62c16fe17492e78d74478ced
     name: namespaces
     type: application
     urls:
@@ -36,12 +36,23 @@ entries:
   prometheus-statsd-exporter:
   - apiVersion: v2
     appVersion: v0.15.0
-    created: "2020-05-11T07:03:46.938881708Z"
+    created: "2020-05-12T02:34:03.202601221Z"
     description: A Helm chart for Kubernetes
-    digest: 98dbebde8f5abd03fb6beffc947efc67aab2996f6182d7b9e9d6fd5d53a3f164
+    digest: 1484cbd930732a67ec6ced7060bfd890f5d3d1a36da16512e66c9f7e3bbe4bf5
     name: prometheus-statsd-exporter
     type: application
     urls:
     - https://razvvan.github.io/manotaur-charts/charts/prometheus-statsd-exporter-0.1.31.tgz
     version: 0.1.31
-generated: "2020-05-11T07:03:46.937580795Z"
+  services:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2020-05-12T02:34:03.202973518Z"
+    description: Services
+    digest: f16043f847eb28a1ede8be3061a42d0d00cb126ff839ee6f2591e829c02b9079
+    name: services
+    type: application
+    urls:
+    - https://razvvan.github.io/manotaur-charts/charts/services-0.0.1.tgz
+    version: 0.0.1
+generated: "2020-05-12T02:34:03.189895638Z"
