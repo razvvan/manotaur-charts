@@ -1,0 +1,22 @@
+{{- range .Values.loadbalancers }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .name }}
+
+spec:
+  ports:
+    {{- range .ports }}
+    - nodePort: {{ .nodePort }}
+      port: {{ .port }}
+      protocol: TCP
+      targetPort: {{ .targetPort }}
+    {{- end }}
+  selector:
+    {{- range $v, $k := .selector }}
+    {{ $k }}: {{ $v | quote }}
+    {{-  end }}
+  type: {{ .type }}
+
+{{- end }}

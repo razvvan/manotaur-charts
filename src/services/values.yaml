@@ -1,0 +1,10 @@
+loadbalancers:
+- name: foo
+  ports:
+  - nodePort: 31234
+    port: 1883
+    protocol: TCP
+    targetPort: foo
+  selector:
+    app: foobar
+  type: LoadBalancer
