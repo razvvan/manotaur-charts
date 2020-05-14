@@ -15,4 +15,18 @@ spec:
     volumeHandle: {{ .volumeHandle }}
   storageClassName: {{ .storageClassName }}
   volumeMode: Filesystem
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .prefix }}-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .sizeInG }}Gi
+  storageClassName: {{ .storageClassName }}
+  volumeName: "{{ .prefix }}-pv"
 {{- end }}
+
