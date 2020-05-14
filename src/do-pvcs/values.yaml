@@ -1,0 +1,5 @@
+disks:
+  - volumeHandle: foo-handle
+    prefix: grafana
+    sizeInG: "8"
+    storageClassName: do-block-storage

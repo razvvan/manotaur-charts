@@ -1,0 +1,18 @@
+{{- range .Values.disks }}
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .prefix }}-pv
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: {{ .sizeInG }}Gi
+  csi:
+    driver: dobs.csi.digitalocean.com
+    fsType: ext4
+    volumeHandle: {{ .volumeHandle }}
+  storageClassName: {{ .storageClassName }}
+  volumeMode: Filesystem
+{{- end }}
