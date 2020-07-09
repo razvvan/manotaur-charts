@@ -13,7 +13,7 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: {{ $fullName }}-oauth2-proxy
+          serviceName: {{ $root.Release.Name }}-oauth2-proxy
           servicePort: 80
         path: /oauth2
   {{- if $root.Values.ingress.tls }}
