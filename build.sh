@@ -2,6 +2,8 @@
 
 set -e
 
+helm repo add stable https://kubernetes-charts.storage.googleapis.com
+
 changes=false
 
 mkdir -p charts
