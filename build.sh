@@ -16,6 +16,8 @@ for chart in $(ls src); do
 
   if [[ "$sha_chart" == "$sha_root" ]]; then
     echo "Changes"
+
+    helm dependency update ./src/$chart
     helm package -d charts ./src/$chart
     changes=true
   else
