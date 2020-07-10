@@ -3,9 +3,9 @@ entries:
   cert-manager-crds:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-10T22:00:11.536346607Z"
+    created: "2020-07-10T23:10:30.07659176Z"
     description: Cert Manager CRDs
-    digest: 78cd2554eb07737c85ba54eb02685912f2b177152335a686707d97f225056165
+    digest: bb03f607bfd8567c3d41be400eefef41c171e33da72b28f4ec37c02f9c52aa9a
     name: cert-manager-crds
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   do-pvcs:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-10T22:00:11.536594606Z"
+    created: "2020-07-10T23:10:30.076795658Z"
     description: Digital Ocean PVCs
-    digest: 776c0de5237065687a38992242d5e7357d68b92fc5268b664f6b523930b46bb6
+    digest: 009ae0b6c35be1d208dc14e71341296dd6456ae1d1674df7626a1b5afb727305
     name: do-pvcs
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   gce-pvcs:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-10T22:00:11.536794506Z"
+    created: "2020-07-10T23:10:30.076978957Z"
     description: GCE PVCs
-    digest: 664f5b652208d523a6107fae9071479dfa610e94a623a88375a54cb615b532a8
+    digest: b8ffdc0959c6b7027abf946b105854b43b6ef58bad936b61c41ef02164f4f08b
     name: gce-pvcs
     type: application
     urls:
@@ -36,9 +36,9 @@ entries:
   generic-application:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-10T22:00:11.537551204Z"
+    created: "2020-07-10T23:10:30.077636551Z"
     description: A Helm chart for Kubernetes
-    digest: e76196401ad3f89f3cd4ce8aa62d0d83f1396de2112adc8af5ede2585faf9e9b
+    digest: 89c9e7fbbfa3323dfcc2d3ebaa23c82467bc4515c9d168638a69130a2b185911
     name: generic-application
     type: application
     urls:
@@ -47,9 +47,9 @@ entries:
   letsencrypt-issuer:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-10T22:00:11.537748903Z"
+    created: "2020-07-10T23:10:30.07782625Z"
     description: Letsencrypt
-    digest: e2c48e9581b2b17677a88066e2b8d236a8757b229cd8ced2ee1fd1791691619d
+    digest: 13f1fea21a016a69915bfb3b7023c6bf5046b0a1673ef2a40ad67e2974b7d072
     name: letsencrypt-issuer
     type: application
     urls:
@@ -58,9 +58,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-10T22:00:11.537919703Z"
+    created: "2020-07-10T23:10:30.077990348Z"
     description: Namespaces
-    digest: 3948ca8c51947e5a4c8ae656e658a23b751ac5e2828ac62564a6244411e3f111
+    digest: fcff5701cfe9e7c5799560bf843a7334efb4090827f634b3fdf47c47ca1014ea
     name: namespaces
     type: application
     urls:
@@ -69,13 +69,13 @@ entries:
   oauth2-proxy-with-ingress:
   - apiVersion: v2
     appVersion: 3.2.0
-    created: "2020-07-10T22:00:11.539313499Z"
+    created: "2020-07-10T23:10:30.079123239Z"
     dependencies:
     - name: oauth2-proxy
       repository: '@stable'
       version: 3.2.0
     description: A Helm chart for Kubernetes
-    digest: 593f33d324528371d6402c0597eedce57f4fca188ad053fd3c229ab1ad0145e8
+    digest: 5b33f4e791781a295b0c8841d121feb3414c4cc834df3c8dcd5de3b059a359da
     name: oauth2-proxy-with-ingress
     type: application
     urls:
@@ -84,9 +84,9 @@ entries:
   prometheus-statsd-exporter:
   - apiVersion: v2
     appVersion: v0.15.0
-    created: "2020-07-10T22:00:11.539689498Z"
+    created: "2020-07-10T23:10:30.079471536Z"
     description: A Helm chart for Kubernetes
-    digest: f4fffcf94fc1cee974f1ca76c83f561fcc4e6d8455846be8f825e68a0abb82b5
+    digest: c8c4a12f8e022c3d33fc51c1d31fd34d28fe415779f4cd9e622cd532e099e1d6
     name: prometheus-statsd-exporter
     type: application
     urls:
@@ -95,12 +95,12 @@ entries:
   services:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-10T22:00:11.539922797Z"
+    created: "2020-07-10T23:10:30.079862933Z"
     description: Services
-    digest: b13010ba1fadb3475469c4e3bf20e7e7746679f5d95937dfa45b1cb138fe11ed
+    digest: 61e80323d8c7e19d9547232e6573adca5d1ea642dce80993514cec96cdedac42
     name: services
     type: application
     urls:
     - https://razvvan.github.io/manotaur-charts/charts/services-0.0.1.tgz
     version: 0.0.1
-generated: "2020-07-10T22:00:11.534267412Z"
+generated: "2020-07-10T23:10:30.074580977Z"
