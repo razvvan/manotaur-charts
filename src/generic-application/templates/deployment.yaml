@@ -32,11 +32,6 @@ spec:
         {{- range .Values.volumes }}
         - name: {{ .name }}
 
-          {{- if .configMap }}
-          configMap:
-            name: {{ printf "%s-%s" .configMap.name $root.Values.appName }}
-          {{- end }}
-
           {{- if .emptyDir }}
           emptyDir:
 {{ toYaml .emptyDir | indent 12 }}
