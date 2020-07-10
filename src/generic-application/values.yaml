@@ -79,3 +79,18 @@ tolerations: []
 
 affinity: {}
 
+env: {}
+
+envFromSecret: []
+  # - name: SECRET_USERNAME
+  #   valueFrom:
+  #     secretKeyRef:
+  #       name: mysecret
+  #       key: username
+  # - name: SECRET_PASS
+  #   valueFrom:
+  #     secretKeyRef:
+  #       name: mysecret
+  #       key: pass
+
+#  FOO: true
