@@ -41,11 +41,11 @@ spec:
           {{- end }}
 
           {{- range .Values.envFromSecret }}
-          - name: {{ .name }}
-            valueFrom:
-              secretKeyRef:
-                key: {{ .valueFrom.secretKeyRef.key }}
-                name: {{ .valueFrom.secretKeyRef.name }}
+            - name: {{ .name }}
+              valueFrom:
+                secretKeyRef:
+                  key: {{ .valueFrom.secretKeyRef.key }}
+                  name: {{ .valueFrom.secretKeyRef.name }}
           {{- end }}
 
           ports:
