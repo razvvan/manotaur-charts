@@ -82,6 +82,16 @@ affinity: {}
 env: {}
 
 envFromSecret: []
+
+volumes: []
+  # - name: foo-storage
+  #   persistentVolumeClaim:
+  #     claimName: foo-claim
+
+volumeMounts: []
+  # - mountPath: /foo
+  #   name: foo-storage
+
   # - name: SECRET_USERNAME
   #   valueFrom:
   #     secretKeyRef:
