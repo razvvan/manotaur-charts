@@ -9,7 +9,7 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: {{ $root.Values.service.name }}{{ $root.Values.service.namePostfix }}
+          serviceName: {{ $root.Values.service.name }}-oauth2-proxy
           servicePort: {{ $root.Values.service.port }}
         path: /oauth2
 

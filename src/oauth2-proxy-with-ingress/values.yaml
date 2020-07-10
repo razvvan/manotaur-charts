@@ -2,8 +2,6 @@ host: foo.bar
 
 service:
   name: foo
-  namePostfix: ""
-  # namePostfix: -generic-application
   port: 80
 
 path: /oauth2
