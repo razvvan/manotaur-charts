@@ -1,0 +1,22 @@
+{{- $root := . -}}
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: {{ $root.Values.service.name }}-oauth2-proxy
+spec:
+  rules:
+  - host: {{ $root.Values.host | quote }}
+    http:
+      paths:
+      - backend:
+          serviceName: {{ $root.Values.service.name }}{{ $root.Values.service.namePostfix }}-oauth2-proxy
+          servicePort: {{ $root.Values.service.port }}
+        path: /oauth2
+
+  {{- if $root.Values.tls.enabled }}
+  tls:
+    - hosts:
+        - {{ $root.Values.host | quote }}
+      secretName: {{ $root.Values.tls.secretName }}
+  {{- end }}
+

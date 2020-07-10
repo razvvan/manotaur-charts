@@ -1,0 +1,23 @@
+host: foo.bar
+
+service:
+  name: foo
+  namePostfix: ""
+  # namePostfix: -generic-application
+  port: 80
+
+path: /oauth2
+
+tls:
+  enabled: false
+  secretName: foo-secret
+
+
+oauth2-proxy:
+  config:
+    clientID: "some-client-id"
+    clientSecret: "some-secret"
+    cookieSecret: "some-cookie"
+  extraArgs:
+    provider: "github"
+
