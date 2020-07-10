@@ -27,6 +27,28 @@ spec:
       serviceAccountName: {{ include "generic-application.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
+
+      volumes:
+        {{- range .Values.volumes }}
+        - name: {{ .name }}
+
+          {{- if .configMap }}
+          configMap:
+            name: {{ printf "%s-%s" .configMap.name $root.Values.appName }}
+          {{- end }}
+
+          {{- if .emptyDir }}
+          emptyDir:
+{{ toYaml .emptyDir | indent 12 }}
+          {{- end }}
+
+          {{- if .persistentVolumeClaim }}
+          persistentVolumeClaim:
+{{ toYaml .persistentVolumeClaim | indent 12 }}
+          {{- end }}
+
+        {{- end }}
+
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
