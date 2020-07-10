@@ -1,3 +1,4 @@
+{{- if and (.Values.ingress.enabled) (.Values.ingress.sso) -}}
 {{- $fullName := include "generic-application.fullname" . -}}
 {{- $root := . -}}
 
@@ -26,4 +27,6 @@ spec:
       secretName: {{ .secretName }}
     {{- end }}
   {{- end }}
+{{- end }}
+
 {{- end }}
