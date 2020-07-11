@@ -103,4 +103,6 @@ volumeMounts: []
   #       name: mysecret
   #       key: pass
 
+healthPath: /
+
 #  FOO: true
