@@ -39,10 +39,15 @@ spec:
 
           {{- if .persistentVolumeClaim }}
           persistentVolumeClaim:
-{{ toYaml .persistentVolumeClaim | indent 12 }}
+            {{- toYaml .persistentVolumeClaim | indent 12 }}
           {{- end }}
 
         {{- end }}
+
+      {{- if .Values.hostAliases }}
+      hostAliases:
+        {{- toYaml .Values.hostAliases | nindent 8 }}
+      {{- end }}
 
       containers:
         - name: {{ .Chart.Name }}
