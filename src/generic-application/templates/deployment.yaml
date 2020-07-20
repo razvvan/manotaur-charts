@@ -75,6 +75,8 @@ spec:
             - name: http
               containerPort: {{ .Values.service.containerPort }}
               protocol: TCP
+
+          {{- if not .Values.healthProbes }}
           livenessProbe:
             httpGet:
               path: {{ .Values.healthPath }}
@@ -83,6 +85,26 @@ spec:
             httpGet:
               path: {{ .Values.healthPath }}
               port: http
+          {{- else }}
+
+          {{- if .Values.healthProbes.livenessProbe }}
+          livenessProbe:
+            {{- toYaml .Values.healthProbes.livenessProbe | nindent 12 }}
+          {{- end }}
+
+          {{- if .Values.healthProbes.readinessProbe }}
+          readinessProbe:
+            {{- toYaml .Values.healthProbes.readinessProbe | nindent 12 }}
+          {{- end }}
+
+
+          {{- if .Values.healthProbes.startupProbe }}
+          startupProbe:
+            {{- toYaml .Values.healthProbes.startupProbe | nindent 12 }}
+          {{- end }}
+
+          {{- end }}
+
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
