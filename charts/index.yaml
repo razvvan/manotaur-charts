@@ -3,9 +3,9 @@ entries:
   cert-manager-crds:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-20T18:53:32.652399906Z"
+    created: "2020-07-31T17:06:17.919067944Z"
     description: Cert Manager CRDs
-    digest: 096f5982ed79aa45a395ab8dba0ad9a6962257ec0eb1298221f07c63ee22476a
+    digest: cdf2428162f0cdaf0023ac46f3eb1a9ca5ab33f70e172145825dfd288cb7bebe
     name: cert-manager-crds
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   do-pvcs:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-20T18:53:32.652643105Z"
+    created: "2020-07-31T17:06:17.919506446Z"
     description: Digital Ocean PVCs
-    digest: 534a357c44fb061a073a1e0d0ce5ac0f67b40b57278e5390cb01734515289fd6
+    digest: 368b75fcac36828b362c2c83b3edc39879f878a88a984cafad40e8ec56431c28
     name: do-pvcs
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   gce-pvcs:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-20T18:53:32.652815205Z"
+    created: "2020-07-31T17:06:17.919863948Z"
     description: GCE PVCs
-    digest: 19830c06432d66265c6d7a5382c1939f2815c9041ffbc80d57a8ca6dacb58bf6
+    digest: e05227aa059c8b513b26ef2fd68eacaae07da0c9441824d9b99c4834fbe9f46d
     name: gce-pvcs
     type: application
     urls:
@@ -36,9 +36,9 @@ entries:
   generic-application:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-20T18:53:32.653464903Z"
+    created: "2020-07-31T17:06:17.921249456Z"
     description: A Helm chart for Kubernetes
-    digest: 87e54c4b4ea4fa36888867fc336f6a0972a716746b6aecfca8fd4e5bc80cb64b
+    digest: b93efd143ff7fb2f133ce5b4d331165795915a2f5813630b6ab23c5337ead5dc
     name: generic-application
     type: application
     urls:
@@ -47,9 +47,9 @@ entries:
   letsencrypt-issuer:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-20T18:53:32.653647102Z"
+    created: "2020-07-31T17:06:17.921617358Z"
     description: Letsencrypt
-    digest: b6ac96e8bfc49a01b59bcc2213b2153cb5c857fa1fcdaf8968bb063d4daae750
+    digest: 98cba61eb45f8c144c5c2eaff8d0a71db5fc81019c66611efdbc5454a433cd55
     name: letsencrypt-issuer
     type: application
     urls:
@@ -58,9 +58,9 @@ entries:
   namespaces:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-20T18:53:32.653792402Z"
+    created: "2020-07-31T17:06:17.92192936Z"
     description: Namespaces
-    digest: fe80ca4677c77c1280f306a47fbaa8b2d025f496607d2fbb194a9c2ea5ebcc41
+    digest: c0301e4283925d9974321d8cabbdf4f25db3c966dbc4a35f9402101235d21522
     name: namespaces
     type: application
     urls:
@@ -69,13 +69,13 @@ entries:
   oauth2-proxy-with-ingress:
   - apiVersion: v2
     appVersion: 3.2.0
-    created: "2020-07-20T18:53:32.654995098Z"
+    created: "2020-07-31T17:06:17.924405873Z"
     dependencies:
     - name: oauth2-proxy
       repository: '@stable'
       version: 3.2.0
     description: A Helm chart for Kubernetes
-    digest: ad67c2f9fddb9a4152d62d0b0ef7a0df9493bc006d0d81af85459f77b2c23369
+    digest: 31af02e303cd3cae71caf87d2145af8d63d6d538f963ba3aa6e131798fb51e0f
     name: oauth2-proxy-with-ingress
     type: application
     urls:
@@ -84,23 +84,34 @@ entries:
   prometheus-statsd-exporter:
   - apiVersion: v2
     appVersion: v0.15.0
-    created: "2020-07-20T18:53:32.655345797Z"
+    created: "2020-07-31T17:06:17.925114577Z"
     description: A Helm chart for Kubernetes
-    digest: fb14e0e2fb960c9a9fea1b76a2c76f4ad048b7a4e48f60196a1a67a4490da72d
+    digest: 11a5f297b476e40725093c362fbdb1e054cc6129fadd29053124fc1b08ba9dae
     name: prometheus-statsd-exporter
     type: application
     urls:
     - https://razvvan.github.io/manotaur-charts/charts/prometheus-statsd-exporter-0.1.31.tgz
     version: 0.1.31
+  secret-spreader:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2020-07-31T17:06:17.92565278Z"
+    description: Spreads secrets to multiple namespaces
+    digest: ab9619cd131e8081c7d5650027197054e3fc067ed651060cd9f125f9a1e9d7ee
+    name: secret-spreader
+    type: application
+    urls:
+    - https://razvvan.github.io/manotaur-charts/charts/secret-spreader-0.0.1.tgz
+    version: 0.0.1
   services:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2020-07-20T18:53:32.655541297Z"
+    created: "2020-07-31T17:06:17.926206983Z"
     description: Services
-    digest: da67de0be16ddc88eb6fefbb5d1c7ec436254b25e8478efc361e6f4cb13867a2
+    digest: e9705f3c1d86159dfa66d94003e2230daa4f589c0b71f042d30fb1270faa2bac
     name: services
     type: application
     urls:
     - https://razvvan.github.io/manotaur-charts/charts/services-0.0.1.tgz
     version: 0.0.1
-generated: "2020-07-20T18:53:32.649774914Z"
+generated: "2020-07-31T17:06:17.871142878Z"
