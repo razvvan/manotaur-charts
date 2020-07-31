@@ -1,0 +1,11 @@
+namespaces: []
+# - foo1
+# - foo2
+
+secrets: []
+# - name: hub.docker.com
+#   data:
+#     .dockerconfigjson: "some base64 o the dockerconfig json"
+# - name: barsecret
+#   data:
+#     .dockerconfigjson: "some other base64 o the dockerconfig json"
