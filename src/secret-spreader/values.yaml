@@ -6,6 +6,7 @@ secrets: []
 # - name: hub.docker.com
 #   data:
 #     .dockerconfigjson: "some base64 o the dockerconfig json"
+#   type: kubernetes.io/dockerconfigjson
 # - name: barsecret
 #   data:
-#     .dockerconfigjson: "some other base64 o the dockerconfig json"
+#     FOO: BAR
