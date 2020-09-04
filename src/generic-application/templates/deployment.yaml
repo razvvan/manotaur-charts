@@ -39,7 +39,7 @@ spec:
 
           {{- if .persistentVolumeClaim }}
           persistentVolumeClaim:
-            {{- toYaml .persistentVolumeClaim | indent 12 }}
+{{ toYaml .persistentVolumeClaim | indent 12 }}
           {{- end }}
 
         {{- end }}
