@@ -29,7 +29,11 @@ done
 
 
 if $changes ; then
-  helm repo index --url https://razvvan.github.io/manotaur-charts/ .
+  git checkout gh-pages
+  cp charts/index.yaml .
+  git checkout master
+
+  helm repo index --url https://razvvan.github.io/manotaur-charts/ --merge index.yaml .
 
   git fetch --all
   git checkout gh-pages
