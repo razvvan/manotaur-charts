@@ -36,6 +36,16 @@ entries:
   generic-application:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2020-09-10T17:59:27.464487271Z"
+    description: A Helm chart for Kubernetes
+    digest: 3f1a22e9cd1136ee7fa1176f421d7f9bbf01d8082b27e9a2c61954b1430e758c
+    name: generic-application
+    type: application
+    urls:
+    - https://razvvan.github.io/manotaur-charts/charts/generic-application-0.1.15.tgz
+    version: 0.1.15
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2020-09-10T01:07:20.868411767Z"
     description: A Helm chart for Kubernetes
     digest: d3cb6bb4bc4306199273d0035cefec13d323fa23ef647c72a70e364d95d60608
@@ -114,4 +124,4 @@ entries:
     urls:
     - https://razvvan.github.io/manotaur-charts/charts/services-0.0.1.tgz
     version: 0.0.1
-generated: "2020-09-10T01:07:20.864698324Z"
+generated: "2020-09-10T17:59:27.46338588Z"
