@@ -135,6 +135,9 @@ hostAliases: []
   #   - "foo.local"
   #   - "bar.local"
 
-
-
+strategy: {}
+  # rollingUpdate:
+  #   maxSurge: 25%
+  #   maxUnavailable: 25%
+  # type: RollingUpdate
 #  FOO: true
