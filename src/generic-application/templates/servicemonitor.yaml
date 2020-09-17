@@ -12,5 +12,5 @@ spec:
     scrapeTimeout: 10s
   selector:
     matchLabels:
-      {{- include "generic-application.selectorLabels" . | nindent 4 }}
+      {{- include "generic-application.selectorLabels" . | nindent 6 }}
 {{- end }}
