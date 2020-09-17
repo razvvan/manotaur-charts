@@ -141,3 +141,6 @@ strategy: {}
   #   maxUnavailable: 25%
   # type: RollingUpdate
 #  FOO: true
+
+serviceMonitor:
+  enabled: false

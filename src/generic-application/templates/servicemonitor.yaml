@@ -1,0 +1,16 @@
+{{- if .Values.serviceMonitor.enabled -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    {{- include "generic-application.labels" . | nindent 4 }}
+  name: {{ include "generic-application.fullname" . }}
+spec:
+  endpoints:
+  - interval: 30s
+    port: http
+    scrapeTimeout: 10s
+  selector:
+    matchLabels:
+      {{- include "generic-application.selectorLabels" . | nindent 4 }}
+{{- end }}
